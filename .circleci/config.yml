@@ -24,3 +24,10 @@ workflows:
     jobs:
       - ls:
           name: "List"
+          filters:
+            tags:
+              only: /^env\/.*\/.*/
+            branches:
+              only:
+                - master
+                - /^env\/.*/
