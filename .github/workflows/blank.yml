@@ -16,6 +16,6 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - name: Log
-      run: git log -10 --oneline --decorate --graph b1 b2 b3
+      run: git log -10 --oneline --decorate --graph 
     - name: Log
       run: docker ps ; docker images ; docker --version
