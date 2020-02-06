@@ -17,7 +17,8 @@ jobs:
         ls -la
         docker --version
         make --version
-        type aws
+        aws --version
+        type serverless
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
