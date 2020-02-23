@@ -14,4 +14,4 @@ jobs:
       run: |
         env | grep GITHUB
         env | grep SORIN
-        eval $SORIN_REF
+        echo ${SORIN_REF}
