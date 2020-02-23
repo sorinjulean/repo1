@@ -3,7 +3,7 @@ name: CD
 on: [push]
 
 env:
-  SORIN_REF: $(echo $GITHUB_REF)
+  SORIN_REF: {{ github.ref }}
 
 jobs:
   build:
