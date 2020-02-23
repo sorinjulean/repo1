@@ -16,6 +16,9 @@ jobs:
         env | grep SORIN
         echo "${SORIN_REF}"
   envs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
