@@ -3,8 +3,8 @@ name: CD
 on: [push]
 
 jobs:
-  build-${{ github.ref }}:
-
+  build:
+    name: "Build-${{ github.ref }}"
     runs-on: ubuntu-latest
 
     steps:
