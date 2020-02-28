@@ -1,9 +1,9 @@
-# name: CD
+name: CD
 
 on: [push]
 
 jobs:
-  build:
+  build-${{ github.ref }}:
 
     runs-on: ubuntu-latest
 
