@@ -1,6 +1,9 @@
-name: "CD-${{ github.ref }}"
+name: CD-a
 
-on: [push]
+on: 
+  push:
+    branches:
+      - a
 
 jobs:
   build:
